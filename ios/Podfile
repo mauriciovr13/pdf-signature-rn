@@ -8,6 +8,20 @@ target 'pdfSignature' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'rn-fetch-blob', :path => '../node_modules/rn-fetch-blob'
+
+  pod 'react-native-progress-bar-android', :path => '../node_modules/@react-native-community/progress-bar-android'
+
+  pod 'react-native-progress-view', :path => '../node_modules/@react-native-community/progress-view'
+
+  pod 'react-native-pdf', :path => '../node_modules/react-native-pdf'
+
+  pod 'RNFS', :path => '../node_modules/react-native-fs'
+
+
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
+
   target 'pdfSignatureTests' do
     inherit! :complete
     # Pods for testing
